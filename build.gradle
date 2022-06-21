@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'com.enjoy'
+version '1.0-SNAPSHOT'
+
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/jcenter' }
+    maven { url 'https://maven.aliyun.com/repository/google' }
+    maven { url 'https://maven.aliyun.com/repository/central' }
+    maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+    google()
+}
+
+test {
+    useJUnitPlatform()
+}
